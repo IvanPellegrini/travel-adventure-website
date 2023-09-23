@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1920px;
+  position: relative;
+}
+
+.main-header {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #000000;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 3px 3px 2px rgba(69, 69, 69, 0.8);
+}
+
+span {
+  background-color: #0095ff7f;
+  padding: 0 10px;
+  border-radius: 50%;
+}
+
+.navigation {
+  padding-bottom: 30px;
+}
+
+nav a:link {
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  position: sticky;
+}
+
+nav a:visited {
+  color: #444;
+}
+
+nav a:hover {
+  color: #e29d09;
+}
+nav a:last-child {
+  margin: 0;
+}
+
+.background-img {
+  max-width: 100%;
+  height: 450px;
+  background-image: url(img/travel.jpg);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 50px;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px #020202cc;
+}
+
+.cards_wrap {
+  background-color: #f0f0f0;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  padding-bottom: 200px;
+}
+
+.card_inner {
+  background: #000000e1;
+  border: 1px solid rgba(0, 149, 255, 0.498);
+  border-radius: 5px;
+  padding: 20px 20px;
+  width: 45%;
+  box-shadow: #1717179e 6px 6px 2px 0;
+  display: flex;
+  margin: 0 auto;
+}
+.card_inner img {
+  max-width: 300px;
+  max-height: 220px;
+  border-radius: 5px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 70px 0;
+  color: #1e1e1e;
+  text-shadow: 3px 3px 3px #535353cc;
+}
+
+h4 {
+  color: #558bb0;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card_inner p {
+  font-size: 17px;
+  color: #c5d7de;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  padding: 20px;
+  text-align: justify;
+  word-spacing: -1px;
+}
+
+.learn-button {
+  padding: 15px 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 350px;
+  transform: translate(-50%);
+  background-color: #e29d09;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.learn-button:hover {
+  background-color: #d27000;
+  transition-duration: 1s;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact {
+  background-color: #359db1;
+}
+
+.aside-header {
+  padding-top: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+form {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1734px) {
+  .card_inner img {
+    width: 350px;
+    height: 150px;
+  }
+  .card_inner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 1;
+    row-gap: 10px;
+    width: 70%;
+    align-items: center;
+  }
+
+  .aside-header {
+    font-size: 20px;
+  }
+
+  .navigation {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  nav a:link {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .card_inner img {
+    width: 150px;
+    height: 100px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .learn-button {
+    font-size: 18px;
+  }
+
+  nav a:link {
+    font-size: 16px;
+  }
+}
